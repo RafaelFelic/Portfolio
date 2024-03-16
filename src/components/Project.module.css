@@ -1,0 +1,26 @@
+.scroller[data-animated='true'] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated='true'] .scroller_inner {
+  animation: scrolling linear;
+  animation-timeline: scroll(root);
+}
+
+.scroller[data-direction='right'] .scroller_inner {
+  animation-direction: reverse;
+}
+
+@keyframes scrolling {
+  to {
+    transform: translate(calc(-50% - 20rem));
+  }
+}

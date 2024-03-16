@@ -88,7 +88,7 @@ body {
 .textShadow {
   text-shadow: 3px 3px 3px #000;
 }
-
+/* 
 .scroller[data-animated='true'] {
   overflow: hidden;
   -webkit-mask: linear-gradient(
@@ -114,7 +114,7 @@ body {
   to {
     transform: translate(calc(-50% - 20rem));
   }
-}
+} */
 
 /* 
 @media (prefers-reduced-motion: no-preference) {

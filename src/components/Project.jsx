@@ -1,14 +1,16 @@
+import classes from '../components/Project.module.css';
+
 export default function Project({ project, projectIndex, className }) {
   return (
     <div
       className={`font-['Raleway'] pb-[100px] my-2 mx-2 md:mx-2.5 text-center ${className}`}
     >
       <div
-        className="scroller"
+        className={classes.scroller}
         data-animated="true"
         data-direction={project.dataDirection}
       >
-        <div className="scroller_inner flex flex-nowrap">
+        <div className={`${classes.scroller_inner} flex flex-nowrap`}>
           {[project.image1, project.image2, project.image3].map(
             (image, index) => (
               <img
