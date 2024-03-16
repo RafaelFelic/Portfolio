@@ -37,10 +37,10 @@ function Contact() {
       ref={sectionRef}
       onSubmit={handleSubmit}
     >
-      <h2 className="hide section font-[DOSfont] text-[#ddd] text-center text-5xl my-7 textShadow">
+      <h2 className="hide section font-[DOSfont] text-3xl md:text-5xl my-7 pt-5 text-[#ddd] text-center textShadow">
         Contact
       </h2>
-      <h3 className="mb-5">
+      <h3 className="w-[70%] mb-5 text-center">
         Do you have a project concept? Let us collaborate to make it happen.
       </h3>
       <FormField

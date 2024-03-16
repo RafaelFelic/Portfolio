@@ -5,7 +5,7 @@ import { scrollToSection } from '../utils/scroll';
 export default function Footer() {
   return (
     <footer className="flex flex-col font-['Raleway'] text-black">
-      <div className="flex justify-evenly bg-gray-400 shadow-2xl m-2.5 mx-12 p-5 rounded-full">
+      <div className="flex justify-evenly w-[90%] bg-gray-400 shadow-2xl mx-auto p-5 rounded-full">
         <menu>
           <h3 className="font-extrabold">MENU</h3>
           <ul>
@@ -27,6 +27,7 @@ export default function Footer() {
               key={index}
               href={link.href}
               target="_blank"
+              rel="noreferrer"
               aria-label={link.label}
               className="text-5xl m-2 text-gray-800 hover:text-cyan-900"
             >
@@ -35,7 +36,7 @@ export default function Footer() {
           ))}
         </div>
       </div>
-      <span className="w-full mt-5 font-dos text-gray-300 text-center">
+      <span className="w-full mt-5 font-dos text-gray-300 text-center text-sm md:text-base">
         2024 - Rafael Feliciano - All rights reserved
       </span>
     </footer>

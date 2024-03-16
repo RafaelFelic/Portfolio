@@ -2,14 +2,14 @@ const FormField = ({ label, id, type = 'text', value, onChange, rows }) => {
   const props = {
     id,
     name: id,
-    className: 'w-[500px] max-w-md p-2.5 my-1.25 rounded-3xl text-black',
+    className: 'p-2.5 rounded-3xl text-black',
     value,
     onChange,
     required: true,
   };
 
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col w-[90%] md:w-[500px]">
       <label htmlFor={id} className="mb-2">
         {label}:
       </label>

@@ -1,17 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { HEADER_ITEMS, SOCIAL_LINKS } from '../utils/data';
 import { scrollToSection } from '../utils/scroll';
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null); // Step 1: Ref for the menu
+
+  // Step 2: Implement the logic to hide the menu when clicking outside
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false); // Close the menu if click is outside
+      }
+    }
+
+    // Add event listener
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      // Step 3: Cleanup the event listener
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, [menuRef]); // Dependency array ensures effect is run on mount and unmount
 
   return (
     <header
       className="flex justify-between items-stretch bg-gray-400 relative"
       id="home"
     >
-      <div className="flex items-center z-20">
+      <div className="flex items-center z-20" ref={menuRef}>
+        {' '}
+        {/* Apply ref here */}
         {/* Hamburger Icon for Mobile */}
         <button
           className="p-2 md:hidden" // Show only on mobile
@@ -23,7 +42,6 @@ export default function Header() {
             <span className="block w-8 h-0.5 bg-black"></span>
           </div>
         </button>
-
         {/* Main Content Container: Ensures content alignment on desktop */}
         <div className="flex-grow flex items-center justify-between">
           {/* Navigation Menu */}
@@ -50,7 +68,6 @@ export default function Header() {
             </ul>
           </nav>
         </div>
-
         {/* Social Links - Always on the right */}
         <div className="absolute right-0 flex text-3xl md:text-3xl lg:text-4xl  h-full">
           {SOCIAL_LINKS.map((link, index) => (

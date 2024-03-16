@@ -7,7 +7,7 @@ export default function Portfolio() {
 
   return (
     <div id="portfolio" className="portfolio" ref={sectionRef}>
-      <h2 className="hide section font-[DOSfont] text-[#ddd] text-center text-5xl my-5 p-10 textShadow">
+      <h2 className="hide section font-[DOSfont] text-3xl md:text-5xl my-7 pt-5 text-[#ddd] text-center textShadow">
         Portfolio
       </h2>
       {PROJECTS.map((project, index) => (
