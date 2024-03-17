@@ -42,7 +42,7 @@ export const PROJECTS = [
   {
     title: 'JSaltyLens Photographer Website',
     description:
-      'A digital showcase for JSaltyLens, a professional photographer, presenting a portfolio and an online store. This platform, developed with HTML, CSS, and Vanilla JavaScript, offers a fluid browsing experience. It is further enhanced by a Shopify Buy Button integration, enabling easy e-commerce transactions for her stunning photos and frames.',
+      'A showcase for JSaltyLens, a professional photographer, presenting a portfolio and store. Created with HTML, CSS, and JavaScript, it features smooth navigation and a Shopify Buy Button for straightforward purchases of photos and frames.',
     image1: 'jsaltylens1.png',
     image2: 'jsaltylens2.png',
     image3: 'jsaltylens3.png',
@@ -52,7 +52,7 @@ export const PROJECTS = [
   {
     title: 'Planner App',
     description:
-      'A Planner app blending task management, scheduling, and notes with live currency, Bitcoin, and weather updates via APIs. It is your all-in-one tool for seamless organization and real-time insights, designed to keep you informed and ahead.',
+      'The Planner app combines task management, scheduling, and notes with live updates on currency, Bitcoin, and weather through APIs. Developed with HTML, CSS, and JavaScript, it is an all-in-one organization tool with real-time insights.',
     image1: 'planner1.png',
     image2: 'planner2.png',
     image3: 'planner3.png',
@@ -62,7 +62,7 @@ export const PROJECTS = [
   {
     title: 'Pokemon Memory Game',
     description:
-      'A memory game for kids, developed with Next.js and React, featuring Pokémon characters from the Pokémon API. Styled with Flowbite and TailwindCSS, it offers a vibrant interface for fun and educational gameplay with sound effects, blending technology with learning.',
+      'A kids memory game using Next.js and React, showcasing Pokémon characters via the Pokémon API, styled with Flowbite and TailwindCSS. It provides an engaging and educational experience with sound effects, merging play with learning.',
     image1: 'pokemon1.png',
     image2: 'pokemon2.png',
     image3: 'pokemon3.png',
