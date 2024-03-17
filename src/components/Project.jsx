@@ -10,14 +10,15 @@ export default function Project({ project, projectIndex, className }) {
 
     const scrollY = window.scrollY;
     if (scrollY > lastScrollY.current) {
-      scrollerRef.current.scrollLeft += 5;
+      scrollerRef.current.scrollLeft += 3;
     } else {
-      scrollerRef.current.scrollLeft -= 5;
+      scrollerRef.current.scrollLeft -= 3;
     }
     lastScrollY.current = scrollY;
   };
 
   useEffect(() => {
+    window.isCustomScrollEnabled = true;
     window.addEventListener('scroll', handleWindowScroll);
 
     return () => {
