@@ -55,7 +55,10 @@ Contact Form: Integrated with a backend service to allow easy contact without re
 To clone and run this portfolio website locally, you'll need Git and Node.js installed on your computer. From your command line:
 
 Clone this repository
-``git clone https://github.com/RafaelFelic/Portfolio.git``
+``git clone https://github.com/RafaelFelic/portfolio.git``
+
+Navigate to the project directory
+``cd portfolio``
 
 Install dependencies
 ``npm install``
@@ -79,10 +82,6 @@ I love contributions from the community, whether it's fixing bugs, improving the
 
 Special thanks to all the open-source libraries and tools that made this portfolio possible.
 Design inspiration from various online resources and communities.
-
-## License
-
-This project is open-source and available under the MIT License.
 
 ## Contact
 
