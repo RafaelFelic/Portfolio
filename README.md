@@ -1,4 +1,4 @@
-<h1><a href="https://rafafportfolio.vercel.app/" target="_blank">My Portfolio</a></h1>
+# [My Portfolio](https://rafafportfolio.vercel.app)
 
 Welcome to the GitHub repository for my personal portfolio website. As a Front-End Developer with a focus on HTML, CSS, JavaScript, React and Tailwind CSS, this portfolio showcases my projects, skills, and experiences in web development. Designed with responsiveness in mind, it features a clean, modern UI/UX, highlighting my work and the technologies I use.
 
