@@ -70,7 +70,7 @@ This project is open-source and available under the MIT License.
 
 Feel free to reach out if you have any questions or just want to connect!
 
-Email: rafaelfelic@gmail.com
-LinkedIn: https://www.linkedin.com/in/rafaelfelic
-GitHub: https://github.com/RafaelFelic
-Portfolio: https://rafafportfolio.vercel.app/
+Email: rafaelfelic@gmail.com<br>
+LinkedIn: https://www.linkedin.com/in/rafaelfelic<br>
+GitHub: https://github.com/RafaelFelic<br>
+Portfolio: https://rafafportfolio.vercel.app
