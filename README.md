@@ -39,9 +39,6 @@ To clone and run this portfolio website locally, you'll need Git and Node.js ins
 Clone this repository
 ``git clone https://github.com/RafaelFelic/Portfolio.git``
 
-Go into the repository
-``cd portfolio-website``
-
 Install dependencies
 ``npm install``
 
@@ -52,7 +49,7 @@ Build the project
 
 After installation, you can start the development server to view the website in your browser:
 
-# Start the development server
+Start the development server
 ``npm start``
 The website should now be running on http://localhost:3000.
 
