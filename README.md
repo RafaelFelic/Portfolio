@@ -1,6 +1,6 @@
 # [My Portfolio](https://rafafportfolio.vercel.app/)
 
-Welcome to the GitHub repository for my personal portfolio website. As a Front-End Developer with a focus on JavaScript, React and Tailwind CSS, this portfolio showcases my projects, skills, and experiences in web development. Designed with responsiveness in mind, it features a clean, modern UI/UX, highlighting my work and the technologies I use.
+Welcome to the GitHub repository for my personal portfolio website. As a Front-End Developer with a focus on HTML, CSS, JavaScript, React and Tailwind CSS, this portfolio showcases my projects, skills, and experiences in web development. Designed with responsiveness in mind, it features a clean, modern UI/UX, highlighting my work and the technologies I use.
 
 ## Table of Contents
 - [Technologies Used](#technologies-used)
@@ -14,10 +14,16 @@ Welcome to the GitHub repository for my personal portfolio website. As a Front-E
 
 ## Technologies Used
 
-JavaScript: The core programming language used to build dynamic and interactive features within the web projects showcased in this portfolio.
-React.js: For building the user interface and single-page application features.
-Tailwind CSS: For styling and designing a mobile-responsive layout.
-Vercel: Deployment and hosting platform.
+This project leverages a comprehensive stack of technologies and tools to ensure a modern, efficient, and scalable front-end development workflow. Here's a detailed list of the key technologies used:
+
+- **HTML**: The standard markup language for structuring web pages.
+- **CSS**: Used for styling and visually organizing web pages.
+- **JavaScript**: The scripting language for creating dynamic web content.
+- **React**: A JavaScript library for building fast and interactive user interfaces.
+- **TailwindCSS**: A utility-first CSS framework for designing custom, responsive layouts.
+- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine, used for developing server-side and networking applications.
+- **Git**: A distributed version control system for tracking changes in source code during software development.
+- **Vercel**: A platform for deploying, previewing, and scaling modern web applications effortlessly, facilitating continuous deployment from Git across all branches.
 
 ## Features
 
@@ -30,28 +36,24 @@ Contact Form: Integrated with a backend service to allow easy contact without re
 
 To clone and run this portfolio website locally, you'll need Git and Node.js installed on your computer. From your command line:
 
-bash
-Copy code
-# Clone this repository
-$ git clone https://github.com/yourusername/portfolio-website.git
+Clone this repository
+``git clone https://github.com/RafaelFelic/Portfolio.git``
 
-# Go into the repository
-$ cd portfolio-website
+Go into the repository
+``cd portfolio-website``
 
-# Install dependencies
-$ npm install
+Install dependencies
+``npm install``
 
-# Build the project
-$ npm run build
+Build the project
+``npm run build``
 
 ## Running Locally
 
 After installation, you can start the development server to view the website in your browser:
 
-bash
-Copy code
 # Start the development server
-$ npm start
+``npm start``
 The website should now be running on http://localhost:3000.
 
 ## Contributing
