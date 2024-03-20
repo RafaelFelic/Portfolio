@@ -5,18 +5,18 @@ export default function Showcase() {
 
   return (
     <div ref={sectionRef} className="h-screen flex flex-col md:flex-row">
-      <section className="block md:inline-block md:m-auto pr-5 my-8 md:ml-12 w-full md:w-[50%] text-2xl md:text-3xl lg:text-4xl text-right md:text-left font-semibold">
+      <section className="block md:inline-block md:m-auto pr-5 my-8 md:ml-12 w-full md:w-[50%] sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl text-right md:text-left font-semibold">
         <div>
           <p className="hide fromleft mb-3 md:mb-8">Welcome!</p>
           <p className="hide fromleft mb-2 md:mb-5">
             I am{" "}
-            <span className="text-[#4169E1] text-3xl md:text-4xl lg:text-5xl">
+            <span className="text-[#4169E1] sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
               Rafael Feliciano
             </span>
             ,
           </p>
           <div className="typing-effect-wrapper">
-            <p className="text-xl md:text-2xl lg:text-3xl md:w-[85%] w-full text">
+            <p className="sm:text-base md:text-lg lg:text-2xl xl:text-3xl md:w-[85%] w-full text">
               Front-End Developer
             </p>
           </div>
