@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from "react";
-import classes from "../components/Project.module.css";
+import React, { useEffect, useRef } from 'react';
+import classes from '../components/Project.module.css';
 
 export default function Project({ project, projectIndex, className }) {
   const scrollerRef = useRef(null);
@@ -19,10 +19,10 @@ export default function Project({ project, projectIndex, className }) {
 
   useEffect(() => {
     window.isCustomScrollEnabled = true;
-    window.addEventListener("scroll", handleWindowScroll);
+    window.addEventListener('scroll', handleWindowScroll);
 
     return () => {
-      window.removeEventListener("scroll", handleWindowScroll);
+      window.removeEventListener('scroll', handleWindowScroll);
     };
   }, []);
 
@@ -33,7 +33,7 @@ export default function Project({ project, projectIndex, className }) {
 
   return (
     <div
-      className={`bg-black bg-opacity-40 shadow-black shadow-md rounded-3xl p-5 my-2 mx-2 md:mx-2.5 text-center ${className}`}
+      className={`bg-black bg-opacity-40 shadow-black shadow-md rounded-3xl p-5 my-12 mx-2 md:mx-2.5 text-center ${className}`}
     >
       <div className={`${classes.scroller} flex flex-nowrap`} ref={scrollerRef}>
         {imagesToDisplay.map((image, index) => (
@@ -43,17 +43,17 @@ export default function Project({ project, projectIndex, className }) {
             alt={`${project.title} ${index + 1}`}
             className={`m-1 ${
               projectIndex === 1
-                ? "w-1/3 md:1/4 mx-5 rounded-2xl shadow-md shadow-black"
+                ? 'w-1/3 md:1/4 mx-5 rounded-2xl shadow-md shadow-black'
                 : projectIndex === 2
-                ? "w-2/3 h-auto md:w-1/2 object-contain"
-                : "w-2/3 md:w-1/2"
+                ? 'w-2/3 h-auto md:w-1/2 object-contain'
+                : 'w-2/3 md:w-1/2'
             }`}
           />
         ))}
       </div>
 
       <h3 className="text-white mt-3 text-base md:text-lg">{project.title}</h3>
-      <p className="m-2.5 p-2.5 md:mx-10 text-[#bbb] text-xs md:text-base">
+      <p className="m-2 md:m-6 text-[#bbb] text-xs md:text-base">
         {project.description}
       </p>
       <a
