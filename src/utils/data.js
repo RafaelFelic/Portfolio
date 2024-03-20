@@ -2,10 +2,10 @@ import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 export const HEADER_ITEMS = [
-  { id: 'about', label: '<about>' },
-  { id: 'skills', label: '<skills>' },
-  { id: 'portfolio', label: '<projects>' },
-  { id: 'contact', label: '<contact>' },
+  { id: 'about', label: '<About />' },
+  { id: 'skills', label: '<Skills />' },
+  { id: 'portfolio', label: '<Projects />' },
+  { id: 'contact', label: '<Contact />' },
 ];
 
 export const FOOTER_ITEMS = [
