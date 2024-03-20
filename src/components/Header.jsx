@@ -1,37 +1,34 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { HEADER_ITEMS, SOCIAL_LINKS } from '../utils/data';
-import { scrollToSection } from '../utils/scroll';
+import React, { useState, useEffect, useRef } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { HEADER_ITEMS, SOCIAL_LINKS } from "../utils/data";
+import { scrollToSection } from "../utils/scroll";
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null); // Step 1: Ref for the menu
 
-  // Step 2: Implement the logic to hide the menu when clicking outside
   useEffect(() => {
     function handleClickOutside(event) {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
-        setIsMenuOpen(false); // Close the menu if click is outside
+        setIsMenuOpen(false);
       }
     }
 
-    // Add event listener
-    document.addEventListener('mousedown', handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside);
     return () => {
-      // Step 3: Cleanup the event listener
-      document.removeEventListener('mousedown', handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [menuRef]); // Dependency array ensures effect is run on mount and unmount
+  }, [menuRef]);
 
   return (
     <header
-      className="flex justify-between items-stretch bg-gray-400 relative"
+      className="flex justify-between items-center bg-[#DAE4E9] relative"
       id="home"
     >
-      <div className="flex items-center z-20" ref={menuRef}>
-        {' '}
-        {/* Apply ref here */}
-        {/* Hamburger Icon for Mobile */}
+      <div
+        className="flex items-center justify-between flex-grow"
+        ref={menuRef}
+      >
         <button
           className="p-2 md:hidden" // Show only on mobile
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -43,33 +40,38 @@ export default function Header() {
           </div>
         </button>
         {/* Main Content Container: Ensures content alignment on desktop */}
-        <div className="flex-grow flex items-center justify-between">
-          {/* Navigation Menu */}
-          <nav
-            className={`${
-              isMenuOpen ? 'block' : 'hidden'
-            } md:flex flex-grow items-center bg-gray-400 md:bg-transparent absolute md:static top-full left-0`}
-          >
-            <ul className="flex flex-col md:flex-row md:items-center w-full">
-              {HEADER_ITEMS.map((item) => (
-                <li key={item.id}>
-                  <button
-                    className="text-black hover:bg-black hover:text-gray-400 p-2 md:p-0 md:px-4  w-full md:w-auto text-left md:text-center text-3xl md:text-3xl lg:text-4xl"
-                    onClick={() => {
-                      scrollToSection(item.id);
-                      setIsMenuOpen(false); // Close menu on item click for mobile
-                    }}
-                    aria-label={item.label}
-                  >
-                    {item.label}
-                  </button>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+        {/* Navigation Menu */}
+        <nav
+          className={`${
+            isMenuOpen ? "block" : "hidden"
+          } md:flex justify-center flex-grow bg-[#DAE4E9] absolute md:relative top-full left-0 md:bg-transparent z-10`}
+        >
+          <ul className="flex flex-col md:flex-row w-full h-full m-1">
+            {HEADER_ITEMS.map((item) => (
+              <li key={item.id}>
+                <button
+                  className="text-[#4169E1] hover:text-[#DAE4E9] 
+                    hover:bg-[#4169E1]
+                    hover:shadow-[5px_5px_0px_2px_#000]
+                    md:hover:shadow-[10px_10px_0px_2px_#000]
+                    hover:rounded-md                           
+                    my-0.5 mx-2 md:m-2 p-1 md:p-2 text-left md:text-center 
+                   text-2xl lg:text-3xl"
+                  onClick={() => {
+                    scrollToSection(item.id);
+                    setIsMenuOpen(false);
+                  }}
+                  aria-label={item.label}
+                >
+                  {item.label}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
         {/* Social Links - Always on the right */}
-        <div className="absolute right-0 flex text-3xl md:text-3xl lg:text-4xl  h-full">
+        <div className="absolute right-0 flex text-3xl md:text-4xl lg:text-5xl h-full z-20">
           {SOCIAL_LINKS.map((link, index) => (
             <a
               key={index}
@@ -77,7 +79,7 @@ export default function Header() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={link.label}
-              className="text-black flex items-center justify-center px-2.5 hover:bg-black hover:text-gray-400"
+              className="text-black flex items-center justify-center px-2.5 hover:text-[#4169E1]"
             >
               <FontAwesomeIcon icon={link.icon} />
             </a>

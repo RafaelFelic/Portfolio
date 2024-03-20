@@ -15,22 +15,11 @@
 }
 
 body {
-  @apply bg-gradient text-gray-400 font-dos antialiased;
+  @apply bg-gradient text-gray-800 font-['Raleway'] antialiased;
 }
 
-/* @keyframes fadeIn {
-  from {
-    opacity: 0;
-    scale: 1.5;
-  }
-  to {
-    scale: 1;
-    opacity: 0.3;
-  }
-} */
-
 .custom-box-shadow {
-  box-shadow: inset 0px 0px 0px 2px #aaa;
+  box-shadow: inset 0px 0px 0px 2px #333;
 }
 
 .hide {
@@ -51,9 +40,9 @@ body {
 }
 .typing-effect-wrapper {
   display: inline-block;
-  overflow: hidden; /* Hide the text as the container's width animates */
-  white-space: nowrap; /* Keep the text on a single line */
-  border-right: 5px solid; /* The cursor */
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 5px solid;
   animation: cursor 0.75s step-end infinite;
 }
 
@@ -88,48 +77,3 @@ body {
 .textShadow {
   text-shadow: 3px 3px 3px #000;
 }
-/* 
-.scroller[data-animated='true'] {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scroller[data-animated='true'] .scroller_inner {
-  animation: scrolling linear;
-  animation-timeline: scroll(root);
-}
-
-.scroller[data-direction='right'] .scroller_inner {
-  animation-direction: reverse;
-}
-
-@keyframes scrolling {
-  to {
-    transform: translate(calc(-50% - 20rem));
-  }
-} */
-
-/* 
-@media (prefers-reduced-motion: no-preference) {
-  .scroller img {
-    transform: scale(0.5);
-    opacity: 0;
-    animation: fade-in linear forwards;
-    
-  }
-
-  @keyframes fade-in {
-    to {
-      transform: scale(1);
-      opacity: 1;
-    }
-  }
-} 
-*/

@@ -10,7 +10,7 @@ export default function Footer() {
           <h3 className="font-extrabold">MENU</h3>
           <ul>
             {FOOTER_ITEMS.map((item) => (
-              <li key={item.id} className="text-gray-800 hover:text-cyan-900">
+              <li key={item.id} className="text-gray-800 hover:text-[#4169E1]">
                 <button
                   onClick={() => scrollToSection(item.id)}
                   aria-label={item.label}
@@ -29,14 +29,14 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
               aria-label={link.label}
-              className="text-5xl m-2 text-gray-800 hover:text-cyan-900"
+              className="text-5xl m-2 text-gray-800 hover:text-[#4169E1]"
             >
               <FontAwesomeIcon icon={link.icon} />
             </a>
           ))}
         </div>
       </div>
-      <span className="w-full mt-5 font-dos text-gray-300 text-center text-sm md:text-base">
+      <span className="w-full mt-5 text-gray-300 text-center text-sm md:text-base">
         2024 - Rafael Feliciano - All rights reserved
       </span>
     </footer>

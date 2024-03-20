@@ -1,70 +1,59 @@
-import { useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import classes from "../components/Project.module.css";
 
 export default function Project({ project, projectIndex, className }) {
-  const scrollerInnerRef = useRef(null);
+  const scrollerRef = useRef(null);
+  const lastScrollY = useRef(0);
+
+  const handleWindowScroll = () => {
+    if (!window.isCustomScrollEnabled) return;
+
+    const scrollY = window.scrollY;
+    if (scrollY > lastScrollY.current) {
+      scrollerRef.current.scrollLeft += 3;
+    } else {
+      scrollerRef.current.scrollLeft -= 3;
+    }
+    lastScrollY.current = scrollY;
+  };
 
   useEffect(() => {
-    const scroller = scrollerInnerRef.current;
-    if (!scroller) return;
-
-    let requestId;
-    const speed = 0.5; // Adjust speed as needed
-    let position = 0;
-    const direction = project.dataDirection === "right" ? 1 : -1; // Assumes 'left' as default direction
-
-    const animate = () => {
-      position += direction * speed;
-      // Apply limits or loop logic here if needed
-      scroller.style.transform = `translateX(${position}px)`;
-
-      requestId = requestAnimationFrame(animate);
-    };
-
-    animate();
+    window.isCustomScrollEnabled = true;
+    window.addEventListener("scroll", handleWindowScroll);
 
     return () => {
-      cancelAnimationFrame(requestId);
+      window.removeEventListener("scroll", handleWindowScroll);
     };
-  }, [project.dataDirection]);
+  }, []);
+
+  let imagesToDisplay = [project.image1, project.image2, project.image3];
+  if (projectIndex === 1 || projectIndex === 2) {
+    imagesToDisplay = imagesToDisplay.concat(imagesToDisplay);
+  }
 
   return (
     <div
-      className={`font-['Raleway'] pb-[100px] my-2 mx-2 md:mx-2.5 text-center ${className}`}
+      className={`bg-black bg-opacity-40 shadow-black shadow-md rounded-3xl p-5 my-2 mx-2 md:mx-2.5 text-center ${className}`}
     >
-      <div
-        className={classes.scroller}
-        data-animated="true"
-        data-direction={project.dataDirection}
-      >
-        <div
-          ref={scrollerInnerRef}
-          className={`${classes.scroller_inner} flex flex-nowrap`}
-        >
-          {[project.image1, project.image2, project.image3].map(
-            (image, index) => (
-              <img
-                key={index}
-                src={image}
-                alt={`${project.title} ${index + 1}`}
-                className={`relative m-1 ${
-                  projectIndex === 0
-                    ? "md:w-1/2"
-                    : projectIndex === 1
-                    ? "w-1/2 md:w-[30%]"
-                    : "w-1/2"
-                } ${projectIndex === 2 ? "w-auto h-auto md:h-[350px]" : ""}`}
-                style={{
-                  ...(projectIndex === 1 && { right: "-200px" }),
-                  ...(projectIndex === 2 && { left: "-500px" }),
-                }}
-              />
-            )
-          )}
-        </div>
+      <div className={`${classes.scroller} flex flex-nowrap`} ref={scrollerRef}>
+        {imagesToDisplay.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`${project.title} ${index + 1}`}
+            className={`m-1 ${
+              projectIndex === 1
+                ? "w-1/3 md:1/4 mx-5 rounded-2xl shadow-md shadow-black"
+                : projectIndex === 2
+                ? "w-2/3 h-auto md:w-1/2 object-contain"
+                : "w-2/3 md:w-1/2"
+            }`}
+          />
+        ))}
       </div>
-      <h3 className="text-[#fff] mt-3">{project.title}</h3>
-      <p className="m-2.5 mx-0 px-0 md:mx-10 p-2.5 text-[#ccc] text-xs md:text-lg">
+
+      <h3 className="text-white mt-3 text-base md:text-lg">{project.title}</h3>
+      <p className="m-2.5 p-2.5 md:mx-10 text-[#bbb] text-xs md:text-base">
         {project.description}
       </p>
       <a
