@@ -44,7 +44,7 @@ export default function Header() {
         <nav
           className={`${
             isMenuOpen ? 'block' : 'hidden'
-          } md:flex justify-center flex-grow bg-[#DAE4E9] absolute md:relative top-full left-0 md:bg-transparent z-10`}
+          } md:flex justify-center flex-grow bg-[#DAE4E9] absolute md:relative top-full left-0 md:bg-transparent rounded-br-3xl z-10`}
         >
           <ul className="flex flex-col md:flex-row w-full h-full m-1">
             {HEADER_ITEMS.map((item) => (
@@ -55,7 +55,7 @@ export default function Header() {
                     hover:shadow-[5px_5px_0px_2px_#000]
                     md:hover:shadow-[10px_10px_0px_2px_#000]
                     hover:rounded-md                           
-                    m-4 md:m-2 p-1 md:p-2 text-left md:text-center 
+                    m-3 md:m-2 p-1 md:p-2 text-left md:text-center 
                     text-2xl lg:text-3xl xl:text-4xl"
                   onClick={() => {
                     scrollToSection(item.id);
