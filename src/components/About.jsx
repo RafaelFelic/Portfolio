@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="max-w-[780px] mx-auto p-5 md:p-12 px-6 text-sm md:text-lg text-[#ddd] md:leading-[2.4rem] font-['Raleway'] overflow-hidden textShadow"
+      className="max-w-[780px] mx-auto p-5 md:p-12 px-6 text-sm md:text-lg text-[#333] md:leading-[2.4rem] font-semibold"
       ref={sectionRef}
     >
       {/* <h2 className="hide section">About Me</h2> */}
@@ -26,7 +26,7 @@ export default function About() {
         an enthusiastic developer who merges technical know-how with creativity.{' '}
         <button
           onClick={() => scrollToSection('contact')}
-          className="text-cyan-200 hover:text-yellow-400"
+          className="text-[#4169E1] hover:text-yellow-300"
         >
           Let's connect!
         </button>

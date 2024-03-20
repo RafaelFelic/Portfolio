@@ -49,7 +49,7 @@ module.exports = {
         aboutSession: 'aboutSession 0.5s ease-out forwards',
       },
       backgroundImage: {
-        gradient: 'linear-gradient(to bottom, #00a, #333)',
+        gradient: 'linear-gradient(to bottom, #DAE4E9, #333)',
       },
       fontFamily: {
         dos: ["'DOSFont'", 'monospace'],

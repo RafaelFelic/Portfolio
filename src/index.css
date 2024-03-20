@@ -15,11 +15,11 @@
 }
 
 body {
-  @apply bg-gradient text-gray-400 font-dos antialiased;
+  @apply bg-gradient text-gray-800 font-['Raleway'] antialiased;
 }
 
 .custom-box-shadow {
-  box-shadow: inset 0px 0px 0px 2px #aaa;
+  box-shadow: inset 0px 0px 0px 2px #333;
 }
 
 .hide {

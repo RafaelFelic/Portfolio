@@ -33,11 +33,11 @@ function Contact() {
   return (
     <form
       id="contact"
-      className="font-['Raleway'] flex flex-col items-center justify-center gap-2.5"
+      className="flex flex-col items-center justify-center gap-2.5 text-white"
       ref={sectionRef}
       onSubmit={handleSubmit}
     >
-      <h2 className="hide section font-[DOSfont] text-3xl md:text-5xl my-7 pt-5 text-[#ddd] text-center textShadow">
+      <h2 className="hide section text-3xl md:text-4xl my-7 pt-5  text-center">
         Contact
       </h2>
       <h3 className="w-[70%] mb-5 text-center">
@@ -65,7 +65,7 @@ function Contact() {
         onChange={handleChange}
       />
       <button
-        className="w-20 text-cyan bg-transparent p-2 mb-8 rounded-full hover:text-black hover:bg-cyan-300"
+        className="w-20 text-cyan-300 bg-transparent p-2 mb-8 rounded-full hover:text-black hover:bg-cyan-300"
         type="submit"
       >
         Send

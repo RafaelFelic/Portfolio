@@ -7,10 +7,10 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="text-[#ddd] text-center textShadow mb-12 p-1"
+      className="text-black text-center mb-12 p-1"
       ref={sectionRef}
     >
-      <h2 className="hide section font-[DOSfont] text-3xl md:text-5xl my-7">
+      <h2 className="hide section text-3xl md:text-4xl my-7">
         Skills and Power-ups
       </h2>
       <ul className="hide section grid grid-cols-5 md:grid-cols-10 list-none font-['Raleway'] gap-2 mx-1 md:mx-5 xl:mx-12">
@@ -21,7 +21,7 @@ export default function Skills() {
           >
             <img
               src={skill.image}
-              className="w-16 h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 p-1 mb-2 bg-[#eee] rounded-lg shadow-[2px_2px_0px_2px_#000] object-contain"
+              className="w-16 h-16 lg:w-20 lg:h-20 xl:w-24 xl:h-24 p-1 mb-2 bg-[#ddd] rounded-lg shadow-[2px_2px_0px_2px_#000] object-contain"
               alt={skill.name}
             />
             <span>{skill.name}</span>

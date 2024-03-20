@@ -33,7 +33,7 @@ export default function Project({ project, projectIndex, className }) {
 
   return (
     <div
-      className={`font-['Raleway'] pb-[100px] my-2 mx-2 md:mx-2.5 text-center ${className}`}
+      className={`bg-black bg-opacity-40 shadow-black shadow-md rounded-3xl p-5 my-2 mx-2 md:mx-2.5 text-center ${className}`}
     >
       <div className={`${classes.scroller} flex flex-nowrap`} ref={scrollerRef}>
         {imagesToDisplay.map((image, index) => (
@@ -52,8 +52,8 @@ export default function Project({ project, projectIndex, className }) {
         ))}
       </div>
 
-      <h3 className="text-[#fff] mt-3 text-base md:text-lg">{project.title}</h3>
-      <p className="m-2.5 p-2.5 md:mx-10 text-[#ccc] text-xs md:text-base">
+      <h3 className="text-white mt-3 text-base md:text-lg">{project.title}</h3>
+      <p className="m-2.5 p-2.5 md:mx-10 text-[#bbb] text-xs md:text-base">
         {project.description}
       </p>
       <a
