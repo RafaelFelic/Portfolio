@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import useTextAnimation from '../utils/textAnimation';
-import FormField from './FormField';
+import React, { useState } from "react";
+import useTextAnimation from "../utils/textAnimation";
+import FormField from "./FormField";
 
 function Contact() {
   const sectionRef = useTextAnimation();
 
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
+    name: "",
+    email: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -22,11 +22,11 @@ function Contact() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log(formData);
-    alert('Thank you for your message. We will get back to you soon!');
+    alert("Thank you for your message. We will get back to you soon!");
     setFormData({
-      name: '',
-      email: '',
-      message: '',
+      name: "",
+      email: "",
+      message: "",
     });
   };
 
@@ -40,7 +40,7 @@ function Contact() {
       <h2 className="hide section text-3xl md:text-4xl my-7 pt-5  text-center">
         Contact
       </h2>
-      <h3 className="w-[70%] mb-5 text-center">
+      <h3 className="w-[80%] mb-5 text-center">
         Do you have a project concept? Let us collaborate to make it happen.
       </h3>
       <FormField

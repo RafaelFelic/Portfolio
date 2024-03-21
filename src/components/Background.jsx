@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const Background = () => {
   const [scale, setScale] = useState(1);
@@ -20,15 +20,15 @@ const Background = () => {
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
   return (
     <div
-      className="fixed top-0 left-0 w-screen h-screen bg-[url('/public/background.png')] bg-cover bg-no-repeat md:bg-center mix-blend-hard-light opacity-5 z-[-1] "
-      style={{ transform: `scale(${scale})`, backgroundPosition: 'center' }}
+      className="fixed top-0 left-0 w-screen h-screen bg-[url('/public/background2.jpg')] bg-cover bg-no-repeat md:bg-center mix-blend-normal opacity-10 z-[-1] "
+      style={{ transform: `scale(${scale})`, backgroundPosition: "center" }}
     ></div>
   );
 };
