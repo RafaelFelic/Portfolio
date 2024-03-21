@@ -1,6 +1,6 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FOOTER_ITEMS, SOCIAL_LINKS } from '../utils/data';
-import { scrollToSection } from '../utils/scroll';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FOOTER_ITEMS, SOCIAL_LINKS } from "../utils/data";
+import { scrollToSection } from "../utils/scroll";
 
 export default function Footer() {
   return (

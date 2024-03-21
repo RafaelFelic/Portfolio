@@ -27,7 +27,7 @@ const Background = () => {
   }, []);
   return (
     <div
-      className="fixed top-0 left-0 w-screen h-screen bg-[url('/public/background.png')] bg-cover bg-no-repeat md:bg-center mix-blend-hard-light opacity-5 z-[-1] "
+      className="fixed top-0 left-0 w-screen h-screen bg-[url('/public/background2.jpg')] bg-cover bg-no-repeat md:bg-center mix-blend-normal opacity-10 z-[-1] "
       style={{ transform: `scale(${scale})`, backgroundPosition: 'center' }}
     ></div>
   );

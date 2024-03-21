@@ -26,7 +26,7 @@ export default function Showcase() {
         </div>
       </section>
 
-      <section className="w-[85%] md:w-[40%] md:mr-12 text-base lg:text-lg bg-gray-400 text-black p-2.5 shadow-[20px_20px_0px_2px_#000] hide fromright">
+      <section className="w-[85%] md:w-[40%] md:mr-12 text-base lg:text-lg bg-[#4169E1] bg-opacity-40 rounded-3xl text-black p-2.5 shadow-[20px_20px_0px_2px_#000] hide fromright">
         <div className="p-2.5 skills">
           <p className="text-2xl md:text-3xl md:mb-6 ">skills &#123;</p>
           <p className="mb-5">

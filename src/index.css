@@ -2,11 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap");
 
 @font-face {
-  font-family: 'DOSFont';
-  src: url('/public/Perfect DOS VGA 437 Win.ttf') format('truetype');
+  font-family: "DOSFont";
+  src: url("/public/Perfect DOS VGA 437 Win.ttf") format("truetype");
 }
 
 * {
@@ -20,6 +20,7 @@ body {
 
 .custom-box-shadow {
   box-shadow: inset 0px 0px 0px 2px #333;
+  border-radius: 50px;
 }
 
 .hide {
@@ -68,10 +69,12 @@ body {
 
 .skills {
   box-shadow: inset 0px 0px 0px 2px #000;
+  border-radius: 20px;
 }
 
 .work {
   box-shadow: inset 0px 0px 0px 2px #000;
+  border-radius: 20px;
 }
 
 .textShadow {
