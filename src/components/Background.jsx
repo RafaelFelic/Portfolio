@@ -21,7 +21,7 @@ const Background = () => {
   };
 
   const updateScreenSize = () => {
-    setIsMobile(window.innerWidth <= 768);
+    setIsMobile(window.innerWidth <= 500);
   };
 
   useEffect(() => {
@@ -40,8 +40,8 @@ const Background = () => {
   return (
     <div
       className={`fixed top-0 left-0 w-screen h-screen bg-[url('/public/background.png')] bg-cover bg-no-repeat ${
-        isMobile ? '' : 'md:bg-center'
-      } mix-blend-hard-light opacity-10 md:opacity-5 z-[-1]`}
+        isMobile ? '' : 'md:bg-center xl:bg-top'
+      } mix-blend-hard-light opacity-5 z-[-1]`}
       style={{
         transform: `scale(${scale})`,
         ...(isMobile ? { backgroundPosition: '20% center' } : {}),
