@@ -2,24 +2,6 @@
 
 Welcome to the GitHub repository for my personal portfolio website. As a Front-End Developer with a focus on HTML, CSS, JavaScript, React and Tailwind CSS, this portfolio showcases my projects, skills, and experiences in web development. Designed with responsiveness in mind, it features a clean, modern UI/UX, highlighting my work and the technologies I use.
 
----
-
-## Design Philosophy: A Tribute to QBASIC
-
-This portfolio is more than just a showcase of my skills and projects; it's a respect to my roots in programming, drawing heavy inspiration from QBASIC, the programming language that introduced me to the world of coding in the 1990s. For those who remember, QBASIC was not just a tool, but a gateway to creativity and problem-solving for a whole generation of programmers.
-
-### Why QBASIC?
-
-- **Nostalgic Aesthetic**: The layout and design choices reflect the simplicity and constraints of early computing environments. This is a deliberate attempt to capture the essence of an era where programming was as much about discovery as it was about creation.
-- **Simplicity and Focus**: Much like the straightforward and unadorned interface of QBASIC, this portfolio aims to prioritize content and functionality, presenting my work and experiences without unnecessary embellishment.
-- **Tribute to Beginnings**: Incorporating elements reminiscent of QBASIC serves as a personal reminder of my journey from a curious enthusiast to a professional Front-End Developer. It's a tribute to the roots of my passion for coding.
-
-### Embracing Retro, Powered by Modern Tech
-
-While the inspiration comes from the past, the technologies used to bring this portfolio to life are firmly anchored in the present. HTML, CSS (with a touch of Tailwind CSS for that custom, responsive layout), JavaScript, and React combine to recreate a retro vibe while ensuring a smooth, modern user experience. This blend of old and new reflects my development philosophy: honoring the past while embracing the future.
-
----
-
 ## Table of Contents
 - [Technologies Used](#technologies-used)
 - [Features](#features)
