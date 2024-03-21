@@ -8,25 +8,25 @@ export default function Showcase() {
       ref={sectionRef}
       className="h-screen flex flex-col justify-evenly xl:p-12 items-center md:flex-row"
     >
-      <section className="block md:inline-block md:m-auto mr-5 md:ml-12 w-full md:w-[60%] text-3xl lg:text-4xl text-right md:text-left font-semibold">
+      <section className="block md:inline-block md:m-auto mr-5 md:ml-12 w-full md:w-[60%] text-2xl md:text-3xl lg:text-4xl text-right md:text-left font-semibold">
         <div>
           <p className="hide fromleft mb-3 md:mb-8">Welcome!</p>
           <p className="hide fromleft mb-2 md:mb-3">
             I am{' '}
-            <span className="text-[#4169E1] text-4xl lg:text-5xl ">
+            <span className="text-[#4169E1] text-3xl md:text-4xl lg:text-5xl">
               Rafael Feliciano
             </span>
             ,
           </p>
           <div className="typing-effect-wrapper">
-            <p className="text-xl lg:text-2xl  md:w-[85%] w-full text">
+            <p className="text-xl md:text-2xl lg:text-3xl md:w-[85%] w-full text">
               Front-End Developer
             </p>
           </div>
         </div>
       </section>
 
-      <section className="w-[85%] md:w-[40%] md:mr-12 text-base lg:text-lg bg-[#4169E1] bg-opacity-40 rounded-3xl text-black p-2.5 shadow-[20px_20px_0px_2px_#000] hide fromright">
+      <section className="w-[85%] md:w-[40%] md:mr-12 text-base lg:text-lg bg-[#95AADD] rounded-3xl text-black p-2.5 shadow-[20px_20px_0px_2px_#000] hide fromright">
         <div className="p-2.5 skills">
           <p className="text-2xl md:text-3xl md:mb-6 ">skills &#123;</p>
           <p className="mb-5">
