@@ -21,7 +21,6 @@ This project leverages a comprehensive stack of technologies and tools to ensure
 - **JavaScript**: The scripting language for creating dynamic web content.
 - **React**: A JavaScript library for building fast and interactive user interfaces.
 - **TailwindCSS**: A utility-first CSS framework for designing custom, responsive layouts.
-- **Node.js**: A JavaScript runtime built on Chrome's V8 JavaScript engine, used for developing server-side and networking applications.
 - **Git**: A distributed version control system for tracking changes in source code during software development.
 - **Vercel**: A platform for deploying, previewing, and scaling modern web applications effortlessly, facilitating continuous deployment from Git across all branches.
 
