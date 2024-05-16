@@ -1,8 +1,8 @@
-const FormField = ({ label, id, type = "text", value, onChange, rows }) => {
+const FormField = ({ label, id, type = 'text', value, onChange, rows }) => {
   const props = {
     id,
     name: id,
-    className: "p-2.5 rounded-3xl text-black",
+    className: 'p-2.5 rounded-xl text-black',
     value,
     onChange,
     required: true,
@@ -13,7 +13,7 @@ const FormField = ({ label, id, type = "text", value, onChange, rows }) => {
       <label htmlFor={id} className="mb-2">
         {label}:
       </label>
-      {type === "textarea" ? (
+      {type === 'textarea' ? (
         <textarea {...props} placeholder="Your message here" rows={rows || 4} />
       ) : (
         <input {...props} type={type} />

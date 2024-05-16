@@ -1,11 +1,11 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { FOOTER_ITEMS, SOCIAL_LINKS } from "../utils/data";
-import { scrollToSection } from "../utils/scroll";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FOOTER_ITEMS, SOCIAL_LINKS } from '../utils/data';
+import { scrollToSection } from '../utils/scroll';
 
 export default function Footer() {
   return (
     <footer className="flex flex-col font-['Raleway'] text-black">
-      <div className="flex justify-evenly w-[90%] bg-gray-400 shadow-2xl mx-auto p-5 rounded-full">
+      <div className="flex justify-evenly w-[90%] bg-gray-400 shadow-2xl mx-auto p-5 rounded-3xl max-w-[800px]">
         <menu>
           <h3 className="font-extrabold">MENU</h3>
           <ul>

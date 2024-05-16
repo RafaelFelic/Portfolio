@@ -46,7 +46,7 @@ export const PROJECTS = [
     image1: 'jsaltylens1.png',
     image2: 'jsaltylens2.png',
     image3: 'jsaltylens3.png',
-    projectUrl: 'https://jsaltylens.netlify.app/',
+    projectUrl: 'https://jsaltylens.vercel.app/',
     dataDirection: 'right',
   },
   {
@@ -56,7 +56,7 @@ export const PROJECTS = [
     image1: 'planner1.png',
     image2: 'planner2.png',
     image3: 'planner3.png',
-    projectUrl: 'https://planner-rafael.netlify.app/',
+    projectUrl: 'https://plannerweb.vercel.app/',
     dataDirection: 'left',
   },
   {
@@ -66,7 +66,7 @@ export const PROJECTS = [
     image1: 'pokemon1.png',
     image2: 'pokemon2.png',
     image3: 'pokemon3.png',
-    projectUrl: 'https://pokemonme.netlify.app/',
+    projectUrl: 'https://pokemonmemory.vercel.app/',
     dataDirection: 'right',
   },
 ];

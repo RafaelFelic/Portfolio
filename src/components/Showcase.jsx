@@ -6,7 +6,7 @@ export default function Showcase() {
   return (
     <div
       ref={sectionRef}
-      className="h-screen flex flex-col justify-evenly xl:p-12 items-center md:flex-row"
+      className="h-screen flex flex-col justify-evenly xl:p-12 items-center md:flex-row max-w-[1200px] w-full mx-auto"
     >
       <section className="block md:inline-block md:m-auto mr-5 md:ml-12 w-full md:w-[60%] text-2xl md:text-3xl lg:text-4xl text-right md:text-left font-semibold">
         <div>

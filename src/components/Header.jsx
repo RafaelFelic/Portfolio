@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className="flex justify-between items-center bg-[#DAE4E9] relative"
+      className="flex justify-between items-center bg-[#DAE4E9] relative max-w-[1200px] w-full mx-auto"
       id="home"
     >
       <div

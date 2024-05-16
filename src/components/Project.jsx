@@ -32,9 +32,7 @@ export default function Project({ project, projectIndex, className }) {
   }
 
   return (
-    <div
-      className={`bg-black bg-opacity-40 shadow-black shadow-md rounded-3xl p-5 my-12 mx-2 md:mx-2.5 text-center ${className}`}
-    >
+    <div className={` max-w-[950px] mx-1 md:mx-auto mb-20  ${className}`}>
       <div className={`${classes.scroller} flex flex-nowrap`} ref={scrollerRef}>
         {imagesToDisplay.map((image, index) => (
           <img
@@ -52,18 +50,22 @@ export default function Project({ project, projectIndex, className }) {
         ))}
       </div>
 
-      <h3 className="text-white mt-3 text-base md:text-lg">{project.title}</h3>
-      <p className="m-2 md:m-6 text-[#bbb] text-xs md:text-base">
+      <h3 className="text-black mt-3 mx-2 text-base font-bold md:text-lg">
+        {project.title}
+      </h3>
+      <p className="mx-2 md:m-3  text-[#222] text-xs md:text-base font-semibold">
         {project.description}
       </p>
-      <a
-        className="text-cyan-300 text-[0.8rem] font-bold p-2.5 m-2.5 rounded-full no-underline hover:text-black hover:bg-cyan-300"
-        href={project.projectUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Open Live
-      </a>
+      <div className="flex flex-wrap items-center justify-center mt-3">
+        <a
+          className="text-[#4169E1] bg-gray-300 text-[0.8rem] font-bold p-2.5 rounded-xl no-underline hover:text-gray-300 hover:bg-[#4169E1] "
+          href={project.projectUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Open Live
+        </a>
+      </div>
     </div>
   );
 }

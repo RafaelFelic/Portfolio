@@ -7,7 +7,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="max-w-[780px] mx-auto p-5 md:p-12 px-6 text-sm md:text-lg text-[#333] md:leading-[2.4rem] font-semibold"
+      className="max-w-[850px] mx-auto p-5 md:p-12 px-3 text-sm md:text-lg text-[#333] md:leading-[2.4rem] font-semibold text-center"
       ref={sectionRef}
     >
       {/* <h2 className="hide section">About Me</h2> */}

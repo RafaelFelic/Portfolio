@@ -7,7 +7,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="text-black text-center mb-12 p-1"
+      className="text-black text-center mb-12 p-1 max-w-[1200px] w-full mx-auto"
       ref={sectionRef}
     >
       <h2 className="hide section text-3xl md:text-4xl my-7">
