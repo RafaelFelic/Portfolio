@@ -13,7 +13,7 @@ export default function Skills() {
       <h2 className="hide section text-3xl md:text-4xl my-7">
         Skills and Power-ups
       </h2>
-      <ul className="hide section grid grid-cols-5 md:grid-cols-10 list-none font-['Raleway'] gap-2 mx-1 md:mx-5 xl:mx-12">
+      <ul className="hide section grid grid-cols-5 md:grid-cols-10 list-none gap-2 mx-1 md:mx-5 xl:mx-12">
         {SKILLS.map((skill, index) => (
           <li
             key={index}

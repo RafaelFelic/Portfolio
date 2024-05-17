@@ -22,7 +22,7 @@ export default function Header() {
 
   return (
     <header
-      className="flex justify-between items-center bg-[#DAE4E9] relative max-w-[1200px] w-full mx-auto"
+      className="flex justify-between items-center relative max-w-[1200px] w-full mx-auto"
       id="home"
     >
       <div
@@ -56,7 +56,7 @@ export default function Header() {
                     md:hover:shadow-[10px_10px_0px_2px_#000]
                     hover:rounded-md                           
                     m-3 md:m-2 p-1 md:p-2 text-left md:text-center 
-                    text-2xl lg:text-3xl xl:text-4xl"
+                    text-2xl lg:text-3xl "
                   onClick={() => {
                     scrollToSection(item.id);
                     setIsMenuOpen(false);

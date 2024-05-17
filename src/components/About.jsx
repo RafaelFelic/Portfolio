@@ -7,8 +7,8 @@ export default function About() {
   return (
     <section
       id="about"
-      className="max-w-[850px] mx-auto p-5 md:p-12 px-3 text-sm md:text-lg text-[#333] md:leading-[2.4rem] font-semibold text-center"
       ref={sectionRef}
+      className="max-w-[850px] mx-auto mt-[100px] md:mt-0 px-6 md:p-12 text-base md:text-lg text-[#333] md:leading-[2.4rem] font-semibold text-center"
     >
       {/* <h2 className="hide section">About Me</h2> */}
       <p className="hide section mb-5">
@@ -23,12 +23,12 @@ export default function About() {
         creative problem-solving abilities, crucial in the tech industry.
         Currently freelancing, I'm actively seeking new opportunities to
         contribute my skills to dynamic teams or projects. If you're looking for
-        an enthusiastic developer who merges technical know-how with creativity.{' '}
+        an enthusiastic developer who merges technical know-how with creativity,{' '}
         <button
           onClick={() => scrollToSection('contact')}
           className="text-[#4169E1] hover:text-yellow-300"
         >
-          Let's connect!
+          let's connect!
         </button>
       </p>
     </section>

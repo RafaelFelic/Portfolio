@@ -42,7 +42,7 @@ export const PROJECTS = [
   {
     title: 'JSaltyLens Photographer Website',
     description:
-      'A showcase for JSaltyLens, a professional photographer, presenting a portfolio and store. Created with HTML, CSS, and JavaScript, it features smooth navigation and a Shopify Buy Button for straightforward purchases of photos and frames.',
+      'A showcase for JSaltyLens, a professional photographer, presenting a portfolio and store. Created with HTML, CSS, and JavaScript, it features smooth navigation, responsive design, and a Shopify Buy Button for straightforward purchases of photos and frames. The site ensures a seamless experience across all devices, allowing visitors to view and purchase products effortlessly on desktops, tablets, and smartphones.',
     image1: 'jsaltylens1.png',
     image2: 'jsaltylens2.png',
     image3: 'jsaltylens3.png',
@@ -50,9 +50,19 @@ export const PROJECTS = [
     dataDirection: 'right',
   },
   {
-    title: 'Planner App',
+    title: 'SurfLink App Platform',
     description:
-      'The Planner app combines task management, scheduling, and notes with live updates on currency, Bitcoin, and weather through APIs. Developed with HTML, CSS, and JavaScript, it is an all-in-one organization tool with real-time insights.',
+      'SurfLink is an innovative social media platform designed to connect surfers and photographers. Developed with React Native, Expo, and Firebase, SurfLink provides a seamless user experience across iOS, Android, and web applications. The platform aims to create a vibrant community where surfers can easily find and buy stunning photos captured by talented photographers. Currently a work in progress, SurfLink will feature intuitive navigation, real-time updates, and robust security measures, ensuring a trusted and engaging environment for sharing and discovering breathtaking surf photography.',
+    image1: 'surflink1.jpg',
+    image2: 'surflink2.jpg',
+    image3: 'surflink3.jpg',
+    image4: 'surflink4.jpg',
+    dataDirection: 'right',
+  },
+  {
+    title: 'Planner Web App',
+    description:
+      'The Planner web app combines task management, scheduling, and notes with live updates on currency, Bitcoin, exchange currencies, and weather through APIs. Developed with HTML, CSS, and JavaScript, it features a responsive design, ensuring optimal functionality and user experience across all devices. This all-in-one organization tool provides real-time insights and smooth operation on desktops, tablets, and smartphones.',
     image1: 'planner1.png',
     image2: 'planner2.png',
     image3: 'planner3.png',
@@ -62,7 +72,7 @@ export const PROJECTS = [
   {
     title: 'Pokemon Memory Game',
     description:
-      'A kids memory game using Next.js and React, showcasing Pokémon characters via the Pokémon API, styled with Flowbite and TailwindCSS. It provides an engaging and educational experience with sound effects, merging play with learning.',
+      'A kids memory game using Next.js and React, showcasing Pokémon characters via the Pokémon API, styled with Flowbite and TailwindCSS. It provides an engaging and educational experience with sound effects, merging play with learning. The game features a responsive design, ensuring a seamless and enjoyable experience across all devices, including desktops, tablets, and smartphones.',
     image1: 'pokemon1.png',
     image2: 'pokemon2.png',
     image3: 'pokemon3.png',
